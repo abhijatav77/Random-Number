@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium';
+    background: linear-gradient(to bottom, white 0%, white 50%, orange 50%, orange 100%)
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.left-container {
+    width: 20em;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* margin-left: 12em; */
+    text-align: center;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+input {
+    border: 2px solid orange;
+    width: 4em;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
+
+#input {
+    font-size: 40px;
+    margin-bottom: 0; 
+}
+
+.right-container {
+    margin-left: 12em;
+}
+
+span {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+}
+
+
+
+@media (max-width:500px){
+    body{
+        display: flex;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -130px;
+        margin-left: 40px;
+    }
+    .right-container {
+        margin-left: 0;
+        margin-top: 150px;
+    }
+    span {
+        background-color: #fff;
+        color: orange;
+        border-radius: 10px;
+    }
+}
